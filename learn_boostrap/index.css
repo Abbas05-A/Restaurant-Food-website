@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+    color: #ffc222 !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*
+==========================================
+Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 58px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 1px 0 6px black;
+}
+
+h1 span {
+  color: #FFC222;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  #00a149;
+  line-height: 3rem;
+}
+
+h4 {
+  color: #00a149;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: black;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color:  grey;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color:#FFC222;
+  border: 0.1875rem solid #FFC222 !important;
+  color: black;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);
+  transition: .4s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #FFC222;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+/* Header Design */
+
+.navigation{
+  position:fixed;
+  width:100%;
+  left:0;
+  z-index:1000;
+  transition: 0.3s;
+}
+.navigation .nav-item{
+  padding:0 0.625rem;
+  transition: 0.3s linear;
+} 
+.navbar-toggler:focus{
+  outline:unset;
+  border:unset;
+  box-shadow: none;
+}
+.nav-link{
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing:1px;
+}
+.nav-link:hover,
+.nav-link.active{
+  color: #FFC222 !important;
+}
+.navigation .btn{
+  padding:0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left:0.625rem;
+}
+
+/* Change navbar styling on scroll */
+.navigation.scroll-on{
+  position:fixed;
+  background: linear-gradient(white,#d8d8d8);
+  top:0;
+  left:0;
+  width:100%;
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.5);
+  transition: 0.15s;
+}
+.navigation.scroll-on .nav-link{
+  color: black;
+}
+.navigation.scroll-on .nav-link:hover,
+.navigation.scroll-on .nav-link.active{
+  color: #FFC222;
+}
+
+/* top-banner Design */
+.banner{
+  width:100%;
+  background:url('background image/bg.jpg') no-repeat center;
+  background-size: cover;
+  padding:16.875rem 0 9.375rem;
+}
+.banner p{
+  color: white;
+}
+
+/*
+==========================================
+  our-menu Design 
+==========================================
+*/
+.our-menu .card{
+  border: none;
+}
+.our-menu .img-link{
+  position:relative;
+  display:block;
+  z-index:1;
+} 
+.our-menu .img-link{
+  width:100%;
+  height:100%;
+  scale: 100%;
+  transition: .4s;
+}
+.img-link img{
+  width: 100px;
+  height:80px;
+  justify-content: center;
+}
+.img-link:hover {
+  scale: 130%;
+  transition: .4s;
+}
+.our-menu .food-name a{
+  text-align: center;
+  font-size: 0.8125rem;
+  position:relative;
+  display:inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:black;
+}
+.card:hover .food-name a{
+  color:#FFC222;
+}
+
+/*
+==========================================
+ about section Design                     
+==========================================
+*/
+.about-section{
+  background:black;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+.about-section .text-sec{
+  padding-left:2rem;
+}
+.food-type ul li{
+  font-size: 1rem;
+  color:white;
+  line-height: 32px;
+  position:relative;
+  margin-left:30px;
+}
+.food-type ul li::before{
+  position:absolute;
+  left:-2.1875rem;
+  color:#FFC222;
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content:'\f00c';
+  display:inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+/*
+==========================================
+ explore food section Design
+==========================================
+*/
+.explore-food {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+
+.explore-food .card{
+  border:none;
+  background-color:transparent;
+  border-radius: 0.9375rem;
+}
+.explore-food .card img{
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.explore-food p{
+  color:grey;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/*
+==========================================
+ testimonial section Design
+==========================================
+*/
+.review-section{
+  background: #00a149;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+.review-section h2{
+  color:white;
+}
+.review-section .carousel-item{
+  margin-top:3rem;
+  padding:10rem 3.125rem;
+  background-color:black;
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
+.review-section .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding:0.3125rem;
+}
+.review-section .carousel-caption p{
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  color:grey;
+  padding:0 11% 0.625rem;
+}
+.review-section .carousel-indicators{
+  bottom:-2.8125rem;
+}
+.review-section .carousel-indicators button{
+  width:15px;
+  height:15px;
+  outline:none;
+  border-radius: 50%;
+  border: none;
+  margin-right:1rem;
+  opacity:0.3;
+}
+.review-section .carousel-indicators button.active{
+  opacity:1;
+}
+
+/*
+==========================================
+footer section Design
+==========================================
+*/
+.footer{
+  background: black;
+} 
+
+/* Form Control */
+.inputfield .form-control{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  width:100%;
+  border-radius: 0;
+  background:transparent;
+  border:0.1875rem solid white;
+  color:white;
+  font-weight: 500;
+}
+.inputfield .btn{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+  background-color: white;
+  border:0.1875rem solid white !important;
+  color:black;
+  font-weight: 700;
+}
+.inputfield:hover .form-control{
+  border:0.1875rem solid #FFC222;
+}
+.form-control::placeholder {
+  color: white;
+  font-weight: 200;
+}
+.inputfield:hover .btn{
+ background:#FFC222;
+ border:0.1875rem solid #FFC222 !important;
+}
+.inputfield .form-control:hover,
+.inputfield .form-control:focus{
+  outline:none;
+  box-shadow: none;
+  border-color:#FFC222;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+
+  /*custom classes  */ 
+  .text-content{
+    width:100%;
+  }
+  /* navbar brand */ 
+  .navigation .navbar-brand img{
+      height:3.8125rem;
+  }
+  .navigation{
+      text-align: center;
+      background-color: white;
+  }
+  .navigation .nav-link{
+      line-height: 1.875rem;
+      color: black;
+  }
+
+  /* Banner Design */ 
+  .banner{
+      padding:9.375rem 0 9.375rem;
+  }
+
+  /* carousel design */ 
+  .review-section .carousel-caption p{
+      padding:0;
+  }
+
+  /* footer link */ 
+  .footer .footer-social a i{
+      padding:0 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* custom css */
+  h1 {
+      font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    line-height: 28px;
+  }
+
+  /* banner */ 
+  .banner{
+    padding:10.375rem 0 9.375rem;
+  }
+
+  /* carousel design */ 
+  .review-section .carousel-item{
+    padding:11rem 3.125rem;
+  }
+}
